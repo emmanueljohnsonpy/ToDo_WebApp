@@ -14,9 +14,16 @@
   color: black;
   font-size: 25px;
 }
+.modernInput::placeholder {
+  color: gray;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .modernInput:focus {
   outline: none;
 }
+
 .modernButton {
   display: inline-block;
   border: none;
@@ -27,7 +34,19 @@
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
 }
+
+.modernButton:hover {
+  background-color: green;
+  transform: scale(1.1);
+}
+
+.modernButton:active {
+  background-color: black;
+  transform: scale(1);
+}
+
 .inputContainer {
   display: flex;
 }

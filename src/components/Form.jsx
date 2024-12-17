@@ -7,8 +7,20 @@ export default function Form({ todos, setTodos }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    setTodos([...todos, todo]);
-    setTodo({ name: "", done: false });
+
+    if (
+      todo.name.trim() !== "" &&
+      !todos.some(
+        (t) => t.name.toLowerCase() === todo.name.trim().toLowerCase()
+      )
+    ) {
+      setTodos([...todos, todo]);
+      setTodo({ name: "", done: false });
+    } else if (todo.name.trim() === "") {
+      alert("Please enter a valid todo item.");
+    } else {
+      alert("This todo item already exists.");
+    }
   }
   return (
     <form className={styles.todoform} onSubmit={handleSubmit}>

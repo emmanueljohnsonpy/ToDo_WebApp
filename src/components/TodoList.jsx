@@ -7,14 +7,18 @@ export default function TodoList({ todos, setTodos }) {
   return (
     <div className={styles.list}>
       {console.log({ todos })}
-      {sortedTodos.map((item) => (
-        <TodoItem
-          key={item.name}
-          item={item}
-          todos={todos}
-          setTodos={setTodos}
-        />
-      ))}
+      {sortedTodos.length === 0 ? (
+        <h1>No tasks added yet.</h1>
+      ) : (
+        sortedTodos.map((item) => (
+          <TodoItem
+            key={item.name}
+            item={item}
+            todos={todos}
+            setTodos={setTodos}
+          />
+        ))
+      )}
     </div>
   );
 }

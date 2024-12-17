@@ -3,29 +3,113 @@
   color: black;
   font-size: 20px;
   margin: 0 auto;
+  word-wrap: break-word;
 }
 
 .itemName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-weight: bold;
-  padding: 20px;
+  padding: 10px;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 
 .line {
   border: 1px solid #f4f4f4;
-}
-
-.deleteButton {
-  float: right;
-  padding: 12px 20px;
-  border: none;
-  background-color: black;
-  color: white;
-  margin-top: -5px;
-  border-radius: 35px;
-  font-weight: bold;
-  cursor: pointer;
+  margin-top: 10px;
 }
 
 .completed {
   text-decoration: line-through;
+  color: gray;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.deleteButton {
+  padding: 12px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.deleteButton:hover {
+  background-color: #d9534f;
+  transform: scale(1.1);
+}
+
+.editInput {
+  font-size: 20px;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  min-width: 150px;
+  flex-grow: 1;
+  white-space: normal;
+}
+
+.editButton {
+  padding: 5px 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editButton:hover {
+  background-color: #f3c13a;
+  transform: scale(1.1);
+}
+
+.editButton:focus {
+  outline: none;
+}
+
+.saveButton {
+  padding: 5px 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.saveButton:hover {
+  background-color: #218838;
+}
+
+.saveButton:focus {
+  outline: none;
+}
+
+.itemName span {
+  display: block;
+  max-width: calc(100% - 50px);
+  overflow: hidden;
+  white-space: normal;
 }
