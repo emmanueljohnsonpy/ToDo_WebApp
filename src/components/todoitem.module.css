@@ -69,6 +69,7 @@
 }
 
 .editButton {
+  height: 37px;
   padding: 5px 10px;
   border: none;
   background-color: black;
@@ -89,6 +90,7 @@
 }
 
 .saveButton {
+  height: 37px;
   padding: 5px 10px;
   border: none;
   background-color: #28a745;
