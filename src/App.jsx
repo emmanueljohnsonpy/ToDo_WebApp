@@ -17,7 +17,6 @@ function App() {
       <Header />
       <Todo />
       <Footer />
-      {/* <Component_mine /> */}
     </div>
   );
 }
