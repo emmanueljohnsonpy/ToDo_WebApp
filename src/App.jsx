@@ -4,19 +4,27 @@ import Todo from "./components/Todo";
 import "./App.css";
 
 import Footer from "./components/Footer";
-import Print from "./comp/Print";
-import List from "./comp/Map";
-import MyResearch from "./comp/MyResearch";
-import Components from './comp/Components';
-
+import Print from "./practice/Print";
+import List from "./practice/Map";
+import MyResearch from "./practice/MyResearch";
+import Components from "./practice/Components";
+import { Props } from "./practice/Props";
+import Events from "./practice/Events";
+import Conditional from "./practice/Conditional";
+import IsGoal from "./practice/Conditional";
+import Lists from "./practice/Lists";
+import Forms from "./practice/Forms";
 function App() {
   useEffect(() => {
     document.title = "My Todo App";
   }, []);
-
+  const fruit = "Apple";
+  const person = { name: "Ronaldo", team: "Portugal" };
+  let isGoal = false;
+  const cars = ["BMW", "Ford", "Benz"];
   return (
     <div className="App">
-     {/*  <Header />
+      {/*  <Header />
       <Todo />
       <Footer /> */}
       {/* <Print /> */}
@@ -24,6 +32,14 @@ function App() {
       {/* {sample()} */}
       {/* <MyResearch /> */}
       {/* <Components /> */}
+      {/* <Props value="wwcd" /> */}
+      {/* <Props value={fruit} /> */}
+      {/* <Props value = {person} /> */}
+      {/* <Events /> */}
+      {/* <IsGoal isGoal={isGoal} /> */}
+      {/* <Conditional/> */}
+      {/* <Lists /> */}
+      <Forms />
     </div>
   );
 }
