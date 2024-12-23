@@ -1,0 +1,14 @@
+body {
+    background-color: blue;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.sample {
+    color: black;
+}
+
+#sampleid {
+    color: orange;
+}

@@ -14,6 +14,11 @@ import Conditional from "./practice/Conditional";
 import IsGoal from "./practice/Conditional";
 import Lists from "./practice/Lists";
 import Forms from "./practice/Forms";
+import Styling from "./practice/Styling";
+import Hook from "./practice/Hook.jsx";
+import State from "./practice/State.jsx";
+import Effect from "./practice/Effect.jsx";
+
 function App() {
   useEffect(() => {
     document.title = "My Todo App";
@@ -39,7 +44,11 @@ function App() {
       {/* <IsGoal isGoal={isGoal} /> */}
       {/* <Conditional/> */}
       {/* <Lists /> */}
-      <Forms />
+      {/* <Forms /> */}
+      {/* <Styling /> */}
+      {/* <Hook /> */}
+      {/* < State /> */}
+      <Effect />
     </div>
   );
 }
