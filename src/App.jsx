@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Todo from "./components/Todo";
 import "./App.css";
@@ -18,6 +18,7 @@ import Styling from "./practice/Styling";
 import Hook from "./practice/Hook.jsx";
 import State from "./practice/State.jsx";
 import Effect from "./practice/Effect.jsx";
+import Practice from "./practice/Practice.jsx"
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,10 @@ function App() {
   const person = { name: "Ronaldo", team: "Portugal" };
   let isGoal = false;
   const cars = ["BMW", "Ford", "Benz"];
+  const [count, setCount] = useState(0)
+  function handleClick(){
+    setCount(count+1)
+  }
   return (
     <div className="App">
       {/*  <Header />
@@ -48,7 +53,12 @@ function App() {
       {/* <Styling /> */}
       {/* <Hook /> */}
       {/* < State /> */}
-      <Effect />
+      {/* <Effect /> */}
+      {/* <h1>Hai Welcome to this page</h1> */}
+      {/* <Practice /> */}
+      {/* <Practice /> */}
+     {/*  <Practice count={count} onclick={handleClick}/>
+      <Practice count={count} onclick={handleClick}/> */}
     </div>
   );
 }
