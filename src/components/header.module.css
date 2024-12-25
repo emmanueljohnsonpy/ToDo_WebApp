@@ -1,11 +1,8 @@
 .header {
-  background-color: black;
-  color: white;
+  background-color: #f4f4f4; /* Light gray for a clean look */
+  color: #333; /* Dark gray text for contrast */
   text-align: center;
-  font-weight: bold;
-  height: 50px;
-  padding: 29px;
-  font-size: 3em;
-  font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  font-size: 2em; /* Smaller and simpler font size */
+  padding: 20px; /* Balanced padding for height */
+  border-bottom: 2px solid #ddd; /* Subtle border for separation */
 }

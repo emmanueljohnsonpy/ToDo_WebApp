@@ -18,25 +18,29 @@ import Styling from "./practice/Styling";
 import Hook from "./practice/Hook.jsx";
 import State from "./practice/State.jsx";
 import Effect from "./practice/Effect.jsx";
-import Practice from "./practice/Practice.jsx"
-
+import Practice from "./practice/Practice.jsx";
+import AssignmentOne from "./practice/AssignmentOne.jsx";
+import AssignmentTwo from "./practice/AssignmentTwo.jsx";
+import AssignmentThree from "./practice/AssignmentThree.jsx";
+import AssignmentFour from "./practice/AssignmentFour.jsx";
 function App() {
-  useEffect(() => {
-    document.title = "My Todo App";
-  }, []);
   const fruit = "Apple";
   const person = { name: "Ronaldo", team: "Portugal" };
   let isGoal = false;
   const cars = ["BMW", "Ford", "Benz"];
-  const [count, setCount] = useState(0)
-  function handleClick(){
-    setCount(count+1)
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
   }
+  const goats = [
+    { id: 1, name: "Ronaldo", email: "ronaldo@gmail.com" },
+    { id: 2, name: "Messi", email: "messi@gmail.com" },
+    { id: 3, name: "Neymar", email: "neymar@gmail.com" },
+  ];
   return (
     <div className="App">
-      {/*  <Header />
+       <Header />
       <Todo />
-      <Footer /> */}
       {/* <Print /> */}
       {/* <List /> */}
       {/* {sample()} */}
@@ -57,8 +61,14 @@ function App() {
       {/* <h1>Hai Welcome to this page</h1> */}
       {/* <Practice /> */}
       {/* <Practice /> */}
-     {/*  <Practice count={count} onclick={handleClick}/>
+      {/*  <Practice count={count} onclick={handleClick}/>
       <Practice count={count} onclick={handleClick}/> */}
+      {/* {goats.map((player) => (
+        <AssignmentOne key={player.id} player={player} />
+      ))} */}
+      {/* <AssignmentTwo /> */}
+      {/* <AssignmentThree /> */}
+      {/* <AssignmentFour /> */}
     </div>
   );
 }

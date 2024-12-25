@@ -23,7 +23,7 @@ export default function TodoItem({ item, todos, setTodos }) {
   }
 
   function handleSaveEdit() {
-    const trimmedNewName = newName.trim(); // Remove leading and trailing spaces
+    const trimmedNewName = newName.trim(); 
 
     if (trimmedNewName === "") {
       alert("Please enter a valid name. The name cannot be empty.");

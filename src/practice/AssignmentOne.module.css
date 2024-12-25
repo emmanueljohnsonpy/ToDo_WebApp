@@ -1,0 +1,24 @@
+.background {
+    background-color: #6CB4EE;
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+    flex-direction: column;  
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.header {
+    color: white;
+    font-family: bold;
+    font-size: 45px;
+    margin: 0;
+}
+
+.para {
+    color: black;
+    font-family: bold;
+    margin: 0;
+}

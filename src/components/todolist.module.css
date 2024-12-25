@@ -1,17 +1,16 @@
 .list {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 650px;
-  margin: 0 auto;
+  background-color: #f9f9f9; /* Light gray background for simplicity */
+  border-radius: 5px; /* Slightly rounded corners */
+  border: 1px solid #ddd; /* Subtle border for definition */
   padding: 20px;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  width: 100%; /* Responsive width */
+  max-width: 650px; /* Max width for consistency */
+  margin: 30px auto; /* Centered list with space at the top and bottom */
 }
 
 .list h1 {
-  color: gray;
-  font-size: 24px;
-  font-weight: bold;
+  color: #000000; /* Dark gray for the heading */
+  font-size: 20px; /* Reduced font size */
+  font-weight: normal; /* Lighter font weight */
   text-align: center;
 }

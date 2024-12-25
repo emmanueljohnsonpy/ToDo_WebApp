@@ -1,8 +1,10 @@
 .item {
-  width: 650px;
+  width: 100%; /* Make it responsive */
+  max-width: 650px; /* Limit the width */
   color: black;
-  font-size: 20px;
+  font-size: 16px; /* Smaller font size for simplicity */
   margin: 0 auto;
+  padding: 10px;
   word-wrap: break-word;
 }
 
@@ -10,14 +12,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: bold;
-  padding: 10px;
-  width: 100%;
-  flex-wrap: nowrap;
+  font-weight: normal; /* Lighter weight for a clean look */
+  padding: 5px 0;
 }
 
 .line {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #ddd; /* Subtle line */
   margin-top: 10px;
 }
 
@@ -27,91 +27,63 @@
 }
 
 .checkbox {
-  width: 20px;
-  height: 20px;
+  width: 16px; /* Smaller checkbox */
+  height: 16px;
   margin-right: 10px;
-  cursor: pointer;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-shrink: 0;
 }
 
 .deleteButton {
-  padding: 12px 20px;
+  padding: 8px 15px;
   border: none;
-  background-color: black;
+  background-color: red; /* Red for delete button */
   color: white;
-  border-radius: 35px;
-  font-weight: bold;
+  border-radius: 4px;
+  font-size: 14px; /* Smaller font size for buttons */
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.deleteButton:hover {
-  background-color: #d9534f;
-  transform: scale(1.1);
 }
 
 .editInput {
-  font-size: 20px;
+  font-size: 16px;
   padding: 5px;
   margin-right: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 4px;
   width: 100%;
-  min-width: 150px;
-  flex-grow: 1;
-  white-space: normal;
+  min-width: 120px;
 }
 
 .editButton {
-  height: 37px;
+  height: 30px;
   padding: 5px 10px;
   border: none;
-  background-color: black;
-  color: white;
-  border-radius: 5px;
-  font-weight: bold;
+  background-color: yellow; /* Yellow for edit button */
+  color: black;
+  border-radius: 4px;
+  font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.editButton:hover {
-  background-color: #f3c13a;
-  transform: scale(1.1);
-}
-
-.editButton:focus {
-  outline: none;
 }
 
 .saveButton {
-  height: 37px;
+  height: 30px;
   padding: 5px 10px;
   border: none;
-  background-color: #28a745;
+  background-color: #28a745; /* Green for save button */
   color: white;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 4px;
+  font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.saveButton:hover {
-  background-color: #218838;
-}
-
-.saveButton:focus {
-  outline: none;
 }
 
 .itemName span {
   display: block;
   max-width: calc(100% - 50px);
   overflow: hidden;
-  white-space: normal;
+  text-overflow: ellipsis; /* Prevent text from overflowing */
+  white-space: nowrap; /* Prevent wrapping */
 }

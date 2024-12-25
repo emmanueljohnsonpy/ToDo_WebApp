@@ -1,52 +1,54 @@
 .todoform {
-  background-color: white;
-  border-radius: 8px;
+  background-color: #f9f9f9; /* Light background for simplicity */
+  border: 1px solid #ddd; /* Subtle border for structure */
+  border-radius: 5px; /* Slightly rounded corners */
   padding: 20px;
-  width: 650px;
-  margin: 0 auto;
-  margin-top: 50px;
-  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.2);
+  width: 100%; /* Responsive width */
+  max-width: 600px; /* Limit the form's width */
+  margin: 30px auto; /* Centered form with reduced margin */
 }
+
 .modernInput {
   display: block;
   width: 100%;
-  border: none;
-  color: black;
-  font-size: 25px;
+  border: 1px solid #ccc; /* Simple border for input */
+  padding: 10px;
+  color: #333; /* Neutral text color */
+  font-size: 16px; /* Standard font size */
+  border-radius: 4px; /* Slight rounding for smoothness */
+  margin-bottom: 15px; /* Space between inputs */
 }
+
 .modernInput::placeholder {
-  color: gray;
-  font-size: 24px;
-  font-weight: bold;
+  color: #888; /* Subtle placeholder color */
+  font-size: 16px;
 }
 
 .modernInput:focus {
   outline: none;
+  border-color: #007BFF; /* Highlight border on focus */
 }
 
 .modernButton {
   display: inline-block;
+  background-color: #007BFF; /* Simple blue button */
+  color: white;
+  padding: 10px 15px;
   border: none;
   border-radius: 4px;
-  background-color: black;
-  color: white;
-  padding: 12px 20px;
   cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.3s;
+  font-size: 16px;
 }
 
 .modernButton:hover {
-  background-color: green;
-  transform: scale(1.1);
+  background-color: #0056b3; /* Slightly darker blue on hover */
 }
 
 .modernButton:active {
-  background-color: black;
-  transform: scale(1);
+  background-color: #004085; /* Even darker on click */
 }
 
 .inputContainer {
   display: flex;
+  gap: 10px; /* Space between elements */
 }
