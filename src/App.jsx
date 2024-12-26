@@ -23,6 +23,8 @@ import AssignmentOne from "./practice/AssignmentOne.jsx";
 import AssignmentTwo from "./practice/AssignmentTwo.jsx";
 import AssignmentThree from "./practice/AssignmentThree.jsx";
 import AssignmentFour from "./practice/AssignmentFour.jsx";
+import Sample from "./practice/Sample.jsx"
+import Examples from "./components/Examples.jsx"
 function App() {
   const fruit = "Apple";
   const person = { name: "Ronaldo", team: "Portugal" };
@@ -69,6 +71,8 @@ function App() {
       {/* <AssignmentTwo /> */}
       {/* <AssignmentThree /> */}
       {/* <AssignmentFour /> */}
+      {/* < Sample /> */}
+      <Examples />
     </div>
   );
 }
